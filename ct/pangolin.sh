@@ -63,7 +63,7 @@ function update_script() {
     cd /opt/pangolin
     $STD npm ci
     $STD npm run set:pg
-    $STD npm run set:oss
+    $STD npm run set:enterprise
     rm -rf server/private
     DATABASE_URL="$DB_URL" $STD npm run db:generate
     $STD npm run build
