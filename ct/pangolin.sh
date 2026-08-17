@@ -64,7 +64,6 @@ function update_script() {
     $STD npm ci
     $STD npm run set:pg
     $STD npm run set:enterprise
-    rm -rf server/private
     DATABASE_URL="$DB_URL" $STD npm run db:generate
     $STD npm run build
     $STD npm run build:cli
