@@ -48,7 +48,6 @@ mkdir -p /opt/pangolin/config/{traefik,db,letsencrypt,logs}
 $STD npm ci
 $STD npm run set:pg
 $STD npm run set:enterprise
-rm -rf server/private
 DATABASE_URL="postgresql://pangolin:${PG_DB_PASS}@localhost:5432/pangolin" $STD npm run db:generate
 $STD npm run build
 $STD npm run build:cli
