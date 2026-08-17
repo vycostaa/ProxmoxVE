@@ -6,7 +6,7 @@ source <(curl -fsSL https://raw.githubusercontent.com/vycostaa/ProxmoxVE/refs/he
 # Source: https://pangolin.net/ | Github: https://github.com/fosrl/pangolin
 
 APP="Pangolin"
-PANGOLIN_VERSION="${PANGOLIN_VERSION:-1.21.0}"
+PANGOLIN_VERSION="${PANGOLIN_VERSION:-1.21.1}"
 var_tags="${var_tags:-proxy}"
 var_cpu="${var_cpu:-2}"
 var_ram="${var_ram:-4096}"
